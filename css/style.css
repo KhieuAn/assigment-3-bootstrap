@@ -1,0 +1,146 @@
+body {
+    margin: 0 auto;
+}
+
+ul li {
+    list-style-type: none;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1rem;
+
+}
+
+.m-left {
+    display: flex;
+    padding: 0;
+}
+
+.m-right {
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+    /*for mobile*/
+    .menu {
+        background-color: rgb(79, 66, 66);
+    }
+
+    ul li a {
+    color: white;
+    }
+    
+    .banner-content {
+     padding: 2rem 0;
+     border-bottom: 1px solid grey;
+    }
+    
+    #main {
+        width: 100%;
+    }
+    .main-one {
+        padding: 2rem 0;
+    }
+    
+    .img {
+        padding-bottom: 2rem;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .main-footer {
+        padding-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    /*for tablet*/
+    .menu {
+        background-color: rgb(79, 66, 66);
+    }
+
+    ul li a {
+    color: white;
+    }
+    
+    .banner-content {
+     padding: 2rem 0;
+     border-bottom: 1px solid grey;
+    }
+    
+    .main-one {
+        padding: 2rem 0;
+    }
+
+    .img {
+        padding-bottom: 3rem;
+        width: 100%;
+    }
+
+    .main-footer {
+        padding-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /*for desktop*/
+    .m-left {
+        padding-left: 2rem;
+    }
+
+    .m-right {
+        padding-right: 2rem;
+    }
+    
+    #banner {
+        width: 100%;
+        height: 85vh;
+        background-image: url(../image/lodging.png);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text-bold {
+     font-size: 3rem;
+     color: white;
+    }
+
+    .text-paragraph {
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    #main {
+        background-color: rgba(162, 150, 150, 0.67);
+    }
+    .main-one {
+        padding-top: 2rem;
+    }
+
+    .img {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .bg-color {
+        background-color:rgba(191, 184, 184, 0.65);
+    }
+
+    .main-footer {
+        padding-bottom: 2rem;
+    }
+}
